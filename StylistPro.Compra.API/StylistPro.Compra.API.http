@@ -1,0 +1,6 @@
+@StylistPro.Compra.API_HostAddress = http://localhost:5069
+
+GET {{StylistPro.Compra.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

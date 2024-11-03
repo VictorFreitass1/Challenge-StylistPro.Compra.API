@@ -1,0 +1,1 @@
+# StylistPro.Compra.API
