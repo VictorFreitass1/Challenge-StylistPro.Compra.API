@@ -16,6 +16,7 @@ Esta API foi desenvolvida utilizando uma arquitetura de microservices e segue os
 - **Application Layer (Camada de Aplicação)**: Contém a lógica de negócios de alto nível, coordenando operações entre a camada de domínio e a camada de apresentação.
 - **Domain Layer (Camada de Domínio)**: Define as entidades de domínio e as regras de negócios centrais.
 - **Infrastructure Layer (Camada de Infraestrutura)**: Lida com tecnologias externas como acesso ao banco de dados.
+- **Test Layer (Camada de Testes)**: Inclui testes unitários e de integração utilizando xUnit para garantir o comportamento correto da aplicação
 
 ## Funcionalidades
 
@@ -82,20 +83,21 @@ A arquitetura apresentada para o projeto **StylistPro** segue os princípios da 
 
 ## Implementações Recentes
 
-### Testes Unitários
-- Foram implementados testes unitários nas camadas `ApplicationService` e `Repository`. Esses testes são essenciais para verificar o funcionamento correto das operações e validar a integridade dos dados, aumentando a robustez e confiabilidade da API.
-
-### Práticas de Clean Code e SOLID
-- Foram aplicadas práticas de **Clean Code** para garantir a clareza, simplicidade e manutenibilidade do código. Além disso, foram utilizados princípios **SOLID**:
-  - **SRP (Single Responsibility Principle)**: Cada classe é responsável por uma única funcionalidade, facilitando a manutenção e legibilidade.
-  - **OCP (Open/Closed Principle)**: Os módulos são abertos para extensão, mas fechados para modificação, permitindo adicionar novas funcionalidades sem alterar o código existente.
-  - **LSP (Liskov Substitution Principle)** e **ISP (Interface Segregation Principle)**: Classes e interfaces são definidas para permitir substituição e interface específicas para cada caso de uso.
-  - **DIP (Dependency Inversion Principle)**: A inversão de dependências permite desacoplar as camadas, tornando o sistema mais modular.
+## Práticas de Clean Code e SOLID
+- **Clean Code** foi aplicado para clareza, simplicidade e manutenção. Princípios **SOLID** foram seguidos para um código modular e coeso:
+  - **SRP (Single Responsibility Principle)**: Cada classe tem uma única responsabilidade.
+  - **OCP (Open/Closed Principle)**: Módulos são abertos para extensão e fechados para modificação.
+  - **LSP (Liskov Substitution Principle)** e **ISP (Interface Segregation Principle)**: Classes e interfaces específicas para casos de uso.
+  - **DIP (Dependency Inversion Principle)**: Inversão de dependências torna o sistema mais modular.
+ 
+## Testes Unitários
+- Testes unitários foram implementados nas camadas `ApplicationService` e `Repository` para verificar o funcionamento correto e a integridade dos dados, aumentando a robustez e confiabilidade da API.
 
 ## Tecnologias Utilizadas
 - **Oracle Database: Utilizado para operações CRUD.**
 - **ASP.NET Core: Framework utilizado para o desenvolvimento da API.**
 - **OpenAPI/Swagger: Configurado para gerar a documentação da API.**
+- **xUnit**: para testes automatizados
 
 ## Requisitos
 - **.NET SDK 8.0**
